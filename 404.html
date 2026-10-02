@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Not Found</title>
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #0f0e0d;
+      --fg: #f5f1ed;
+      --muted: #8b8680;
+      --accent: #d4af37;
+      --font: 'Crimson Text', Georgia, serif;
+      --mono: 'JetBrains Mono', monospace;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--fg);
+      font-family: var(--font);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: clamp(2rem, 8vw, 6rem);
+    }
+
+    .code {
+      font-size: clamp(2.8rem, 8vw, 6rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      color: var(--accent);
+    }
+
+    .message {
+      margin-top: 1.2rem;
+      font-size: clamp(0.85rem, 2vw, 1rem);
+      color: var(--muted);
+      font-family: var(--mono);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      margin-top: 3rem;
+      width: 2rem;
+      height: 1px;
+      background-color: var(--accent);
+      opacity: 0.5;
+    }
+
+    .note {
+      margin-top: 2rem;
+      font-family: var(--mono);
+      font-size: clamp(0.8rem, 1.8vw, 0.9rem);
+      color: var(--muted);
+      max-width: 32rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="code">404</h1>
+  <p class="message">Nothing here</p>
+
+  <div class="divider"></div>
+
+  <p class="note">The page you were looking for doesn&rsquo;t exist.</p>
+
+</body>
+</html>
